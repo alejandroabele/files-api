@@ -13,6 +13,10 @@ class FilesRepository {
 
     return parsedDataFiles
   }
+
+  async list () {
+    return getExternalFiles()
+  }
 }
 
 module.exports = FilesRepository

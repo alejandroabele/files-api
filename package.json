@@ -7,14 +7,16 @@
     "start": "node src/swagger.js && node src",
     "dev": "node src/swagger.js && nodemon src",
     "test": "standard && npx mocha src/tests/**/*.test.js",
-    "lint": "standard",
-    "swagger-gen": "node src/swagger.js"
+    "lint": "standard --fix",
+    "swagger-gen": "node src/swagger.js",
+    "run-api": "docker-compose up --build && docker-compose down -v"
 
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "swagger-autogen": "^2.23.1",

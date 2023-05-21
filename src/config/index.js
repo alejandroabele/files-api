@@ -1,10 +1,10 @@
 require('dotenv').config()
 module.exports = {
-  port: process.env.PORT || 9000,
+  port: process.env.PORT || 8080,
 
   externalApi: {
-    baseUrl: 'https://echo-serv.tbxnet.com/v1',
-    token: 'Bearer aSuperSecretKey'
-  }
-
+    baseUrl: process.env.API_EXTERNAL_BASE_URL,
+    token: process.env.API_EXTERNAL_TOKEN
+  },
+  urlFront: `http://localhost:${process.env.PORT}/`
 }
