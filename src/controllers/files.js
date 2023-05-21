@@ -3,7 +3,6 @@ const { getData: getDataService, listFiles: listFilesService } = require('../ser
 const { handleSuccessResponse, handleErrorResponse } = require('../utils/responseHandler')
 
 const getData = (req, res) => {
-  
   getDataService(req.query)
     .then((data) => {
       res.status(200).json(handleSuccessResponse(data))

@@ -78,132 +78,39 @@
       "FilesSuccess": {
         "type": "object",
         "properties": {
-          "type": {
+          "message": {
             "type": "string",
-            "example": "object"
+            "example": "OK"
           },
-          "properties": {
-            "type": "object",
-            "properties": {
-              "message": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "example": "string"
-                  },
-                  "example": {
-                    "type": "string",
-                    "example": "OK"
-                  }
-                }
-              },
-              "error": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "example": "boolean"
-                  },
-                  "example": {
-                    "type": "boolean",
-                    "example": false
-                  }
-                }
-              },
-              "payload": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "type": "string",
-                    "example": "array"
-                  },
+          "error": {
+            "type": "boolean",
+            "example": false
+          },
+          "payload": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "example": "test3.csv"
+                },
+                "lines": {
+                  "type": "array",
                   "items": {
                     "type": "object",
                     "properties": {
-                      "type": {
+                      "text": {
                         "type": "string",
-                        "example": "object"
+                        "example": "IomOkTTyZpjeHFlORteOWdhdffdI"
                       },
-                      "properties": {
-                        "type": "object",
-                        "properties": {
-                          "file": {
-                            "type": "object",
-                            "properties": {
-                              "type": {
-                                "type": "string",
-                                "example": "string"
-                              },
-                              "example": {
-                                "type": "string",
-                                "example": "test1.csv"
-                              }
-                            }
-                          },
-                          "lines": {
-                            "type": "object",
-                            "properties": {
-                              "type": {
-                                "type": "string",
-                                "example": "array"
-                              },
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "example": "object"
-                                  },
-                                  "properties": {
-                                    "type": "object",
-                                    "properties": {
-                                      "text": {
-                                        "type": "object",
-                                        "properties": {
-                                          "type": {
-                                            "type": "string",
-                                            "example": "string"
-                                          },
-                                          "example": {
-                                            "type": "string",
-                                            "example": "Example text"
-                                          }
-                                        }
-                                      },
-                                      "number": {
-                                        "type": "object",
-                                        "properties": {
-                                          "type": {
-                                            "type": "string",
-                                            "example": "string"
-                                          },
-                                          "example": {
-                                            "type": "string",
-                                            "example": "12345"
-                                          }
-                                        }
-                                      },
-                                      "hex": {
-                                        "type": "object",
-                                        "properties": {
-                                          "type": {
-                                            "type": "string",
-                                            "example": "string"
-                                          },
-                                          "example": {
-                                            "type": "string",
-                                            "example": "abcde"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
+                      "number": {
+                        "type": "string",
+                        "example": "938"
+                      },
+                      "hex": {
+                        "type": "string",
+                        "example": "f88e2bc90896ba815f74371489256f42"
                       }
                     }
                   }
