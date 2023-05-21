@@ -9,25 +9,25 @@ const doc = {
   schemes: ['http'],
   definitions: {
     FilesSuccess: {
-      message: "OK",
+      message: 'OK',
       error: false,
       payload: [
         {
-          file: "test3.csv",
+          file: 'test3.csv',
           lines: [
-   
+
             {
-              text: "IomOkTTyZpjeHFlORteOWdhdffdI",
-              number: "938",
-              hex: "f88e2bc90896ba815f74371489256f42"
-            },
-        
+              text: 'IomOkTTyZpjeHFlORteOWdhdffdI',
+              number: '938',
+              hex: 'f88e2bc90896ba815f74371489256f42'
+            }
+
           ]
         }
       ]
     },
     FilesListSuccess: {
-      message: "OK",
+      message: 'OK',
       error: false,
       payload: [
         'test1.csv',
